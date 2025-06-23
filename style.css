@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #f5f5f5;
+}
+header {
+  position: sticky;
+  top: 0;
+  background: #121212;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffd700;
+}
+nav a {
+  color: #ddd;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #00ffe0;
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1607013251231-7b7f9033f55b') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.search-bar {
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: #1a1a1a;
+  border: 1px solid #ffa500;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  position: relative;
+}
+.search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+.browse-button {
+  border-left: 1px solid #333;
+  color: #ffa500;
+  font-weight: bold;
+  padding-left: 12px;
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #1e1e1e;
+  border: 1px solid #ffa500;
+  border-top: none;
+  width: 250px;
+  display: none;
+  z-index: 1000;
+}
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: #ffd700;
+  text-decoration: none;
+}
+.dropdown a:hover {
+  background: #2c2c2c;
+}
+.grid-section {
+  padding: 60px 20px;
+}
+.grid-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #ffd700;
+}
+.category-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.category-bar button {
+  background: #333;
+  color: #ffd700;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.category-bar button:hover {
+  background: #444;
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.game-card {
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.game-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #00ffe0;
+}
+.game-card img {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 8px;
+}
